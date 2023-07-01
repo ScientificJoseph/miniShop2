@@ -15,7 +15,7 @@ class Product { //template for building instance objects of Product class
 class ShoppingCart { //template for product Cart
     items = []; //receives prod from addProduct
 
-    set cartItems(value) { // used to set cart new cart total. receives prod from addProduct() below
+    set cartItems(value) { // used to set new cart total. receives prod from addProduct() below
         this.items = value; //overwrites items array with values from updatedItems below
         this.totalOutput.innerHTML = `<h2>Total: \$${this.totalAmount.toFixed(2)}</h2>`; //calls totalAmount() to get total amount
     }
